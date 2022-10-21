@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/clock/clock.css">
+</head>
+<body>
+    <div class="clock">
+        <div class="hand Hour"></div>
+        <div class="hand Minute"></div>
+        <div class="hand Second"></div>
+      <img src="/clock/clock.png" alt="">
+
+        <script>
+            const deg = 6;
+            const hr = document.querySelector('.hand.Hour');
+            const min = document.querySelector('.hand.Minute');
+            const sec= document.querySelector('.hand.Second');
+            setInterval(updateclock,1);
+            function updateclock(){
+                
+                let date = new Date();
+                let hrs = (date.getHours()+5)/12;
+                let mins = (date.getMinutes()+30)/60;
+                let secs = date.getSeconds()/60;
+
+                sec.style.transform = "rotate(" + (secs*360) + "deg)";
+                min.style.transform = "rotate(" + (mins*360) + "deg)";
+                hr.style.transform = "rotate(" + (hrs*360) + "deg)";
+                }
+                updateclock();
+        </script>
+    </div>
+</body>
+</html>

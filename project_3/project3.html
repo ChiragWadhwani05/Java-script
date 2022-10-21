@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/project_3/project3.css">
+</head>
+<body>
+    <div class="box">
+        <div class="image">
+          <img id="image" src="/project_3/bulb-off.webp" alt="">
+        </div>
+  
+<br>
+ <div class="buttons">
+
+  <button onclick="changeImage1()" id="btn1"><p>ON</p></button>
+  <button onclick="changeImage2()" id="btn2"><p>OFF</p></button>
+  
+ </div>
+      
+      </div>
+
+<script>
+    function changeImage1(){
+    document.getElementById('image').src='/project_3/bulb-on.webp'
+}
+function changeImage2(){
+    document.getElementById('image').src='/project_3/bulb-off.webp'
+    
+}
+</script>
+</body>
+</html>

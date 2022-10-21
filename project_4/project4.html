@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/project_4/project4.css">
+    <link rel="stylesheet" href="https://www.fontawesomecheatsheet.com/">
+</head>
+<body>
+    <h1>This Is <br> Thermometer</h1><span id="icon"></span>
+    <script>
+        const tempload = () =>{
+            let temp = document.getElementById('icon');
+            temp.className = "fa fa-temperature-empty";
+            temp.style.color = "yellow";
+            // temp.innerHTML = "&#xf2cb";
+        
+        setTimeout(()=>{
+            temp.className = "fa fa-temperature-quarter";
+             },1000);
+        setTimeout(()=>{
+            temp.className = "fa fa-temperature-half";
+             },2000);
+        setTimeout(()=>{
+            temp.className = "fa fa-temperature-three-quarters";
+             },3000);
+        setTimeout(()=>{
+            temp.className = "fa fa-temperature-full";
+            temp.style.color = "red";
+             },4000);
+            }
+            
+        tempload();
+        setInterval(tempload,5000);
+    </script>
+</body>
+</html>

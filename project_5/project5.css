@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(54, 0, 155, 0.909);
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+form{
+    place-content: center;
+    background-color: rgb(56, 139, 255);
+    padding: 50px;
+    width: 49vw;
+    height: 25vh;
+    border-radius: 10px;
+    box-shadow: 20rem;
+}
+label,span{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: x-large;
+}

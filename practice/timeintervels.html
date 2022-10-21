@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+  <!-- <p>Click to get my Name</p>
+  <br> -->
+  <p id="myname"></p>
+  <button id="btn">Click</button>
+  <!-- <button onclick="clearTimeout(myvar)">Stop</button> -->
+  <button onclick="clearInterval(myvar)">Stop</button>
+
+
+    <script>
+         const myname = document.querySelector('#myname');
+         const btn= document.querySelector('#btn');
+
+        // const showname =()=>{
+        //     myname.innerHTML = "Loading...";
+        //   myvar =  setTimeout(()=> {
+        //         myname.innerHTML = "Chirag Wadhwani";
+        //     },1000)
+        // }
+        // btn.addEventListener('click',showname)
+            let num=0;
+           const counting = ()=>{
+            // myname.innerHTML="Loading..."
+          myvar =  setInterval(()=>{
+                myname.innerHTML =`${myname.innerHTML  +num +" "}`;
+                num++;
+            },1000)
+           }
+btn.addEventListener('click',counting);
+    </script>
+</body>
+</html>

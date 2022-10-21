@@ -1,0 +1,47 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainarea{
+    display: flex;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    font-family: sans-serif;
+}
+.note{
+    height: 30vh;
+    width: 30vw;
+    margin: 10px;
+    border: black solid;
+    overflow-y: scroll;
+}
+.notes{
+    display: flex;
+}
+.operation{
+    font-size: xx-large;
+    
+    margin-left: 80%;
+}
+textarea{
+    margin-left: 3px;
+    width: 98%;
+    height: 100%;
+}
+#btn{
+    margin: 1%;
+    margin-left: 90%;
+    padding: 5px;
+    
+}
+.heading{
+    display: grid;
+    padding: 15px;
+    width: 100vw;
+    height: 2.5vh;
+    background-color: rgb(255, 225, 0);
+}

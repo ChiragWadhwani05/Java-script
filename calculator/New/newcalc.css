@@ -1,0 +1,87 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: cornflowerblue /*#ecf0f3*/;
+}
+.image {
+  height: 1px;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: darkslateblue;
+  font-weight: 600;
+}
+.rightimage {
+  height: 25px;
+  padding: 0px 7px 0px 1px;
+  font-size: medium;
+}
+h5 {
+  height: 25px;
+  padding: 16px 5px 10px 0px;
+  font-size: medium;
+}
+.leftimage {
+  height: 30px;
+  margin-left: auto;
+  padding: 0px 0px 00px 0px;
+}
+.headbox {
+  color: darkslateblue;
+  height: 10%;
+  display: flex;
+  background-color: #ecf0f3;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.container {
+  height: 50vh;
+  width: 50vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ecf0f3;
+  border-radius: 8px;
+  /* box-shadow: 12px 12px 20px #cbced1, -12px -12px 20px #000000; */
+}
+.display #screen {
+  width: 97%;
+  height: 60px;
+  font-size: 35px;
+  outline: none;
+  border: none;
+  text-align: right;
+  padding-right: 0.5rem;
+  background: #ecf0f3;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #cbced1;
+  border-radius: 8px;
+}
+.btns {
+  /* /* height: 10vh; */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+.btns .row button {
+  height: 5vh;
+  margin: 3.5px 7px;
+  width: 8vw;
+  padding: 1px;
+  /* justify-content: center;
+    align-items: center; */
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px #00000020, -3px -3px 9px #cbced1;
+}

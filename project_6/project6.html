@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/project_6/project6.css">
+</head>
+<body>
+    <div class="container">
+        <i class="fa fa-coffee"></i>
+        <div class="counter" data-target="4000"></div>
+        <span>Project completed</span>
+    </div>
+    <div class="container">
+        <i class="fa fa-users"></i>
+        <div class="counter" data-target="15000"></div>
+        <span>Happy Users</span>
+    </div>
+    <div class="container">
+        <i class="fa fa-th-list"></i>
+        <div class="counter" data-target="500"></div>
+        <span>OnGoing Courses</span>
+    </div>
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach((counter)=>{
+            // console.log(counter);
+            counter.innerHTML =0;
+             const updatecounter = ()=>{
+                const targetcount = +counter.getAttribute('data-target');
+                const startingcount = Number(counter.innerHTML); 
+                // const 
+                if (startingcount<targetcount) {
+                    const incr = targetcount/100;
+                    counter.innerHTML = `${Math.round(startingcount+incr)}`;
+                    setTimeout(updatecounter,30)
+                }else{
+                    counter.innerHTML= targetcount;
+                }
+            }
+
+            updatecounter();
+        })
+    </script>
+</body>
+</html>
